@@ -30,11 +30,18 @@ body {
 }
 
 #import-pdf-button {
+    align-items: center;
     background-color: #3182ce;
     border-radius: 10px;
     color: ghostwhite;
+    display: flex;
+    justify-content: center;
     height: 40px;
     width: 75%;
+}
+
+.import-pdf-container input {
+    display: none;
 }
 
 #import-pdf-button:hover {
