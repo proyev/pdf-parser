@@ -5,5 +5,38 @@
 }
 
 html {
+}
+
+body {
+    min-height: 500px;
+    height: 100vh;
+    min-width: 500px;
+    width: 100vw;
+}
+
+.import-pdf-container {
+    align-items: center;
+    background-color: aquamarine;
+    display: flex;
+    float: left;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+}
+
+#import-pdf-button {
     background-color: rebeccapurple;
+    border-radius: 10px;
+    color: ghostwhite;
+    height: 40px;
+    width: 75%;
+}
+
+.text-display-container {
+    align-items: center;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 75%;
 }

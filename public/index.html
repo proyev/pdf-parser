@@ -7,15 +7,16 @@
     <title>ContractHero PDF Parser</title>
 </head>
 <body>
-    <aside>
-        Upload region
+    <aside class="import-pdf-container">
         <input
                 accept=".pdf"
+                id="import-pdf-button"
                 name="uploadPDF"
+                placeholder="Import pdf"
                 type="file"
         >
     </aside>
-    <section>
+    <section class="text-display-container">
       <label for="text-display">Your pdf text:</label>
       <textarea
               id="text-display"
