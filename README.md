@@ -14,7 +14,7 @@
 6. Start uploading
 
 
-## Build with
+## Built with
 
 * Vanilla JS, HTML, CSS
 * [Express](https://expressjs.com/)
