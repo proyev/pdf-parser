@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
    const uploadButton = document.getElementById('import-pdf-button');
    const chooseDocument = document.getElementById('import-pdf');
-   const textViewer = document.getElementById('text-display');
+   const textViewer = document.getElementById('text-viewer');
 
    const fileReader = new FileReader();
 
    uploadButton.addEventListener('click', event => chooseDocument.click());
-   chooseDocument.addEventListener('change', event => {
+   chooseDocument.addEventListener('change', async event => {
 
       if (chooseDocument.files[0]) {
          try {
@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // fileReader.addEventListener('loadend', event => {
                console.log('File loaded');
                try {
-                  textViewer.value = importPDF(chooseDocument.files[0]);
+                   textViewer.value = await importPDF(chooseDocument.files[0]);
                } catch(err) {
-                  alert(err.message);
+                  alert(err);
                }
             // });
          } catch (err) {
-            alert(err.message);
+            alert(err);
          }
       }
    });

@@ -1,15 +1,13 @@
-function importPDF(file) {
+async function importPDF(file) {
     const formData = new FormData();
 
     formData.append('pdf', file);
-    return fetch('/upload', {
+
+    const res = await fetch('/upload', {
         method: 'POST',
-        body: formData
-    }).then(res => {
-        if (res.ok) {
-            return res.text();
-        } else {
-            throw new Error(res.status + res.statusText);
-        }
-    }).catch(err => alert(err.message));
+        body: formData});
+    if (res.ok) {
+        const result = await res.json();
+        return result.text;
+    } else throw new Error(res.status + res.statusText);
 }
