@@ -25,6 +25,7 @@ app.post('/upload', (req, res) => {
     }
 });
 
+//handles invalid requests
 app.use((req, res) => {
     res.statusCode = 400;
     res.redirect('/');
