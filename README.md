@@ -1,3 +1,9 @@
+## Preview
+
+<p align="center">
+    <img src="example.png">
+</p>
+
 ## To get started
 
 ---
