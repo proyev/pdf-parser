@@ -50,7 +50,7 @@ body {
     cursor: pointer;
 }
 
-.text-display-container {
+.text-viewer-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -59,12 +59,12 @@ body {
     width: 75%;
 }
 
-label {
+.text-viewer-container label {
     display: block;
     margin-bottom: 1.5em;
 }
 
-#text-display {
+#text-viewer {
     border: none;
     outline: none;
     resize: none;
